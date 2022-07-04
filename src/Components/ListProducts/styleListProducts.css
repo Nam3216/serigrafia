@@ -1,0 +1,215 @@
+.item-container{
+    margin-top: 50px;
+}
+
+
+.products-container-container{
+    text-align: center;
+    
+    margin-top: 0;
+    
+}
+#banner{
+    object-fit: cover;
+    margin: 0 auto;
+    margin-top: 110px;
+}
+.tipos{
+   margin-right: 180px;
+   width: 500px;
+   text-align: left;
+   
+   
+}
+
+.tipos h4{
+    width: 300px;
+ 
+   background-color: rgb(199, 185, 185);
+   border-bottom: 2px solid black;
+   opacity: 0.8;
+   margin-left:80px;
+   cursor: pointer;
+   
+}
+
+
+
+.tipos h4:hover{
+
+    opacity: 1;
+}
+
+
+
+
+
+.products{/*el nombre de cada prod*/
+    display: inline-block;
+    margin-left: 20px;
+   width: 180px;
+  
+    
+   
+}
+
+.products p{/*nombre cada producto*/
+    cursor: pointer;
+    opacity: 0.8;
+    font-weight: 600;
+    margin-left: 60px;
+    width: 180px;
+}
+
+.products p:hover{
+    opacity: 1.0;
+}
+
+
+.item-container{/*la caja que contiene titulos y nombres prod*/
+   text-align: left;
+  
+   
+}
+
+
+
+.product-item{/*itemd detalle*/
+    text-align: center;
+    width: 500px;
+    height: 290px;
+    margin: 0 auto;
+    margin-top: 50px;
+    
+
+}
+
+.product-item p{
+    width: 500px;
+    margin: 0px auto;
+
+}
+
+.product-item img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+#banner{
+    width: 400px;
+}
+
+#foto-local{
+    width: 400px;
+    margin-top: 50px;
+}
+
+@media screen and (min-width: 1000px) {
+
+    .item-container{
+        margin-top: 50px;
+    }
+    
+    .products-container-container{
+        text-align: center;
+        margin-top: 0;
+    }
+    #banner{
+        object-fit: cover;
+        margin: 0 auto;
+        margin-top: 110px;
+    }
+    .tipos{
+       margin-right: 0;
+       width: 500px;
+       text-align: left;
+       margin: 0 auto;
+    }
+
+    .type-detail{
+        margin: 0 auto;
+    }
+    
+    .tipos h4{
+        width: 340px;
+     
+       background-color: rgb(199, 185, 185);
+       border-bottom: 2px solid black;
+       opacity: 0.8;
+       margin-left: 50px;
+       cursor: pointer;
+    }
+    
+    
+   
+    .tipos h4:hover{
+        opacity: 1;
+    }
+    
+    .products-container{
+        display: flex;/*con esto se pone una caja al lado de la otra, la de los titulos, y la de descripcion*/
+        height: 400px;
+        
+    }
+    
+    .products{/*el nombre de cada prod*/
+        display: inline-block;
+        margin-left: 20px;
+       width: 180px;
+      
+        
+       
+    }
+    
+    .products p{/*nombre cada producto*/
+        cursor: pointer;
+        opacity: 0.8;
+        font-weight: 600;
+        margin-left: 30px;
+       
+    }
+    
+    .products p:hover{
+        opacity: 1.0;
+    }
+    
+    
+    .item-container{/*la caja que contiene titulos y nombres prod*/
+       text-align: left;
+       
+       
+    }
+    
+    
+    
+    .product-item{/*itemd detalle*/
+        text-align: center;
+        width: 800px;
+        height: 290px;
+        margin-top: 0;
+        
+     
+     
+    }
+    
+    .product-item p{
+        width: 500px;
+        margin: 0px auto;
+    
+    }
+    
+    .product-item img{
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+    
+
+    #foto-local{
+        width: 700px;
+        margin-top: 0;
+    }
+
+
+}

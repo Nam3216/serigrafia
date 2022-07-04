@@ -1,0 +1,11 @@
+.carousel-container{
+    width: inherit;
+    height: inherit;
+}
+
+.carousel-container img{
+  /*  width: 10%;*/
+    height: 500px;
+    object-fit: cover;
+}
+

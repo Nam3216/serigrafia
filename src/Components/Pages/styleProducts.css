@@ -1,0 +1,15 @@
+.all-products-container{
+    margin-top: 100px;
+   
+}
+
+@media screen and (min-width: 1000px) {
+
+    .all-products-container{
+        margin-top: 0;
+       
+    }
+    
+
+
+}

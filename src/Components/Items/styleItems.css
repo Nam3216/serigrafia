@@ -1,0 +1,45 @@
+.item{
+    display: inline-block;
+    /*height: 500px;*/
+    width: 302px;
+    height: fit-content;
+    margin: 0px auto;
+   /* margin-right: 50px;*/
+    text-align: center;
+   margin-top: 30px;
+   border: 1px solid white;
+    margin-right: 5px;
+}
+/*img en otro lado*/
+.item img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+
+
+.item p{
+    color: black;
+    font-weight: 600;
+    
+   /* margin-left: 60px;*/
+  
+}
+
+
+.item-text{
+    display: inline-block;
+}
+
+#see-detail-button{
+    background-color: rgb(101, 77, 238);
+    color: white;
+    border: 1px solid blue;
+    
+}
+
+#see-detail-button:hover{
+    background-color: rgb(55, 23, 233);
+}
+

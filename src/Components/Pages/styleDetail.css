@@ -1,0 +1,231 @@
+
+.detail-container{
+    text-align: center;
+}
+.item-detail{
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    margin: 0px auto;
+}
+.item-text-detail{
+    max-width: 400px;
+ 
+  height: 500px;
+  text-align: center;
+}
+
+.item-text-detail p{
+    
+    height: fit-content;
+    margin-bottom: 30px;
+   
+}
+/*-------contador-----------*/
+.item-count{
+   margin-top: 10px;
+}
+
+
+ .operation{
+  /*  display: flex;*/
+   /*text-align:center;*/
+
+   /* width: 200px;*/
+    
+    margin-left: 40px;
+    
+ }
+
+ .button-operation{
+    width: 40px;
+    margin-right: 35px;
+    margin-left: 0;
+    height: 40px;
+    display: inline-block;
+    background-color: rgb(101, 77, 238);
+    color: white;
+    border: 1px solid blue;
+    
+
+    
+}
+.button-operation:hover{
+    background-color: rgb(55, 23, 233);
+}
+
+
+.operation h5{
+    display: inline-block;
+    margin-right: 35px;
+    width: 10px;
+}
+
+.operation p{
+    display: inline-block;
+}
+
+#button-add{
+    width: 160px;
+    background-color: rgb(101, 77, 238);
+}
+#button-add:hover{
+    background-color: rgb(55, 23, 233);
+}
+ /*------------------------*/
+
+
+
+
+.item-detail img{
+    width: 350px;
+    height: 530px;
+    object-fit: cover;
+}
+
+.detail-container{
+    margin-top: 100px;
+}
+#dropdown-basic-button{
+    width: 160px;
+    background-color: rgb(101, 77, 238);
+}
+#dropdown-basic-button:hover{
+    
+    background-color: rgb(55, 23, 233);
+}
+
+/* adentro de selector de colores*/
+.div-color{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-left: 50px;
+    border: 1px solid black;
+}
+
+.div-color-letters{
+    width: 30px;
+    display: inline-block;
+}
+/*-----*/
+.pick-color{
+    margin-top: 0px;
+   
+}
+
+@media screen and (min-width: 1000px) {
+
+
+    .item-detail{
+        display: inline-block;
+        width: fit-content;
+        height: fit-content;
+    }
+    .item-text-detail{
+        max-width: 400px;
+        float: right;
+      margin-left: 100px;
+      height: 500px;
+      text-align: left;
+    }
+    
+    .item-text-detail p{
+        
+        height: fit-content;
+        margin-bottom: 30px;
+       
+    }
+    /*-------contador-----------*/
+    .item-count{
+       margin-top: 10px;
+    }
+    
+    
+     .operation{
+      
+       text-align:left;
+    
+        width: 200px;
+        margin-left: 0;
+        
+        
+        
+     }
+    
+     .button-operation{
+        width: 40px;
+        margin-right: 35px;
+        margin-left: 0;
+        height: 40px;
+        display: inline-block;
+        background-color: rgb(101, 77, 238);
+        color: white;
+        border: 1px solid blue;
+        
+    
+        
+    }
+
+    .button-operation:hover{
+        background-color: rgb(55, 23, 233);
+    }
+    
+    .operation h5{
+        display: inline-block;
+        margin-right: 35px;
+        width: 10px;
+    }
+    
+    .operation p{
+        display: inline-block;
+    }
+    
+    #button-add{
+        width: 160px;
+        background-color: rgb(101, 77, 238);
+    }
+
+    #button-add:hover{
+        background-color: rgb(55, 23, 233);
+    }
+     /*------------------------*/
+    
+    
+    
+    
+    .item-detail img{
+        width: 350px;
+        height: 530px;
+        object-fit: cover;
+    }
+    
+    .detail-container{
+        margin-top: 100px;
+    }
+    #dropdown-basic-button{
+        width: 160px;
+        background-color: rgb(101, 77, 238);
+    }
+    
+    /* adentro de selector de colores*/
+    .div-color{
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        margin-left: 50px;
+        border: 1px solid black;
+    }
+    
+    .div-color-letters{
+        width: 30px;
+        display: inline-block;
+    }
+    /*-----*/
+    .pick-color{
+        margin-top: 0px;
+       
+    }
+
+
+}

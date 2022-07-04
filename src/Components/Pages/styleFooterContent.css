@@ -1,0 +1,13 @@
+.footer-content{
+    width: 90%;
+    margin-left: 5%;
+   
+}
+
+.footer-content p{
+    font-weight: 600;
+}
+
+footer{
+    border: 2px solid black;
+}

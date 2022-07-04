@@ -1,0 +1,35 @@
+form input{
+    display:block ;
+    width: 300px;
+    margin-bottom: 40px;
+}
+
+#price{
+    margin-top: 50px;
+}
+
+.form-buy-container{
+    margin-top: 100px;
+        
+}
+@media screen and (min-width: 1000px) {
+
+    form input{
+        display:block ;
+        width: 500px;
+        margin-bottom: 40px;
+    }
+    
+    #price{
+        margin-top: 50px;
+    }
+
+    .form-buy-container{
+        margin-top: 0;
+            
+    }
+    
+    .form-buy{
+        margin-top: 50px;
+    }
+}

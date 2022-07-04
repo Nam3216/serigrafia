@@ -1,23 +1,58 @@
 import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter,Routes,Route} from "react-router-dom"
+import NavbarOk from "./Components/Navbar/Navbar"
+import Home from "./Components/Pages/Home"
+import Products from "./Components/Pages/Products"
+import Detail from "./Components/Pages/Detail"
+import Category from "./Components/Pages/Category"
+import ContextContainer from './Context/Context';
+import Cart from "./Components/Pages/Cart"
+import Contact from "./Components/Pages/Contact"
+import Footer from './Components/Pages/Footer';
+import Services from "./Components/Pages/Services"
+import Us from "./Components/Pages/Us"
+import Buy from "./Components/Pages/Buy"
+
 
 function App() {
   return (
     <div className="App">
+       <ContextContainer>
+       <div className="content">
+      <BrowserRouter>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+       <NavbarOk/>
       </header>
+     
+      <main className="main">
+     
+        <Routes>
+        
+          <Route path={"/"} element={<Home/>}/>
+          <Route path={"/productos"} element={<Products/>}/>
+          <Route path={"/productos/detalle/:id"} element={<Detail/>}/>
+          <Route path={"/productos/categoria/:category"} element={<Category/>}/>
+          <Route path={"/servicios"} element={<div><Services/></div>}/>
+          <Route path={"/cart"} element={<Cart/>} />
+          <Route path={"/nosotros"} element={<div><Us/></div>}/>
+          <Route path={"/contacto"} element={<Contact/>}/>
+          <Route path={"/comprar"} element={<Buy/>}/>
+        
+      
+
+
+        
+        </Routes>
+       
+        </main>
+        <footer>
+          <Footer/>
+        </footer>
+      </BrowserRouter>
+      </div>
+      </ContextContainer>
+     
     </div>
   );
 }

@@ -1,0 +1,279 @@
+.cart{
+
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+#button-empty{
+    /*display: block;*/
+    margin: 0 auto;
+    margin-top: 80px;
+    
+   
+}
+
+/*---------itemcount----------*/
+
+
+.button-operation-q{
+    
+    height:20px;
+   width:50px;
+
+    /*width: 10px;*/
+   margin-right: 8px;
+   margin-left: 8px;
+  margin-top: 0px;
+  background-color: rgb(101, 77, 238);
+  color: white;
+  border: 1px solid blue;
+
+}
+
+.button-operation-q:hover{
+    background-color: rgb(55, 23, 233);
+}
+#button-change-q{
+    width: 130px;
+    height: 35px;
+    margin-top: 10px;
+    background-color: rgb(101, 77, 238);
+    color: white;
+    border: 1px solid blue;
+}
+
+#button-change-q:hover{
+    background-color: rgb(55, 23, 233);
+}
+
+#p-count{
+    margin-top: 0;
+}
+
+#item-cantidad-cambiar{
+    
+    text-align: center;
+    margin-top: 0;
+}
+/*-----------------*/
+/*------medida tabla---------------*/
+.table{
+    width: 1200px;
+}
+/*------fila para titulos-------*/
+
+.table-title{
+  
+    display: flex;
+    justify-content: space-between;
+   text-align: center;
+
+    
+}
+
+#title-producto{
+   
+   width: 12%;
+   
+
+}
+
+#title-title{
+    width: 12%;
+   
+  
+}
+
+#title-color{
+    width: 12%;
+   
+  
+}
+
+#title-precio-unitario{
+    width: 12%;
+   
+  
+}
+
+#title-cantidad{
+    width: 12%;
+    
+  
+}
+
+#title-cantidad-cambiar{
+    width: 12%;
+    
+  
+}
+
+#title-precio{
+    width: 12%;
+   
+  
+}
+#title-eliminar{
+    width: 12%;
+   
+  
+}
+
+/*------fila para items-------*/
+.table-item{
+  
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.table-item button{/*ESTO ES PARA DARLE FORMA AL BOTON ELIMINAR */
+    height: 50px;
+}
+
+.table-item img{
+    width: 100px;
+}
+
+#item-img{
+    width: 12%;/*antes 25 y no ningun precio*/
+}
+#item-precio-unitario{
+ 
+    width: 12%;
+}
+
+
+#item-cantidad{
+ 
+    width: 12%;
+}
+
+#item-cantidad-cambiar{
+ 
+    width: 12%;
+}
+#item-precio{
+ 
+    width: 12%;
+}
+
+#item-title{
+    width: 12%;
+}
+
+#item-color{
+    width: 12%;
+}
+
+#item-delete{
+    width: 12%;
+    
+}
+
+
+/*-----boton eliminar le pongo color porque se le salio cuando lo pus een un contenedor----*/
+#item-delete button{
+    background-color: rgb(101, 77, 238);
+    color: white;
+    border: 1px solid blue;
+ 
+}
+
+#item-delete button:hover{
+    background-color: rgb(55, 23, 233);
+}
+
+#button-empty{
+    background-color: rgb(101, 77, 238);
+    color: white;
+    border: 1px solid blue;
+    margin-left: 30px;
+}
+
+#button-empty:hover{
+    background-color: rgb(55, 23, 233);
+}
+/*background-color: rgb(101, 77, 238);*/
+
+@media screen and (max-width: 1000px) {
+
+    .table{
+        width: 300px;
+     
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .table-title{
+        
+        display: none;
+        
+        
+    }
+
+    .table-item{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0px auto;
+       
+       
+        
+        
+    }
+
+    #item-img{
+        margin: 0px auto;
+        text-align: center;
+        width: 300px;
+
+    }
+    
+    #item-cantidad{
+     
+        margin: 0px auto;
+        text-align: center;
+        width: 200px;
+    }
+    #item-color{
+        width: 300px;
+    }
+    #item-title{
+        margin: 0px auto;
+        text-align: center;
+        width: 200px;
+    }
+    
+    #item-delete{
+        margin: 0px auto;
+        text-align: center;
+        margin-bottom: 10px;
+        width: 150px;
+        width: 200px;
+        
+    }
+
+   #item-cantidad-cambiar{
+ 
+        margin: 0px auto;
+        text-align: center;
+        width: 150px
+    }
+    #item-precio{
+     
+        margin: 0px auto;
+        text-align: center;
+        width: 200px;
+     
+    }
+
+    #item-precio-unitario{
+ 
+        margin: 0px auto;
+        text-align: center;
+        width: 200px;
+    }
+    
+}

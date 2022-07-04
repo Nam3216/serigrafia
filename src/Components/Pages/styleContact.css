@@ -1,0 +1,123 @@
+.contact-container form input{
+    display: block;
+ 
+}
+
+.contact-container-title{
+    margin-top: 100px;
+}
+.contact-container{
+    text-align: center;
+    margin-top: 50px;
+}
+
+form input{
+    margin: 0px auto;
+    margin-bottom: 20px;
+    border: 1px solid black;
+ 
+}
+
+
+form textarea{/*para centrar text area*/
+   /* margin-left: 60px;*/
+   margin: 0px auto;
+    border: 1px solid black;
+    display: block;   
+}
+button{
+    margin-top: 30px;
+}
+
+.inputs{
+    width: 350px;
+}
+
+#input-msg{
+   
+    width: 350px;
+    height: 300px;
+}
+
+input,textarea{
+    opacity: 0.7;
+}
+
+input:hover,textarea:hover{
+    opacity: 1;
+}
+
+form p{
+    font-style: italic;
+   
+    
+}
+
+
+h5{
+    margin-bottom: 30px;
+}
+
+
+@media screen and (min-width: 1000px) {
+
+    .contact-container form input{
+        display: block;
+    }
+    
+    .contact-container-title{
+        margin-top: 0px;
+    }
+    .contact-container{
+        text-align: center;
+    }
+    
+    form input{
+        margin: 0px auto;
+        margin-bottom: 20px;
+        border: 1px solid black;
+     
+    }
+    
+    
+    form textarea{/*para centrar text area*/
+       /* margin-left: 60px;*/
+       margin: 0px auto;
+        border: 1px solid black;
+        display: block;   
+    }
+    button{
+        margin-top: 30px;
+    }
+    
+    .inputs{
+        width: 500px;
+    }
+    
+    #input-msg{
+       
+        width: 500px;
+        height: 300px;
+    }
+    
+    input,textarea{
+        opacity: 0.7;
+    }
+    
+    input:hover,textarea:hover{
+        opacity: 1;
+    }
+    
+    form p{
+        font-style: italic;
+       
+        
+    }
+    
+    
+    h5{
+        margin-bottom: 30px;
+    }
+
+
+}

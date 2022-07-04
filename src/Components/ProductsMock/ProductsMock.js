@@ -1,0 +1,16 @@
+import React from "react"
+
+const ProductsMock=[{id:101,img:"http://http2.mlstatic.com/D_992924-MLA47337158860_092021-O.jpg", title:"Vinilplus Mate",description:"Esta tinta se usa para v mate...", marca:"Pintesint",category:"tintas",offer:"si",quantity:0},
+{id:102,img:"https://http2.mlstatic.com/D_NQ_NP_927953-MLA46479191704_062021-O.webp", title:"Emulquit",description:"Limpia todo", marca:"Pintesint",category:"limpiadores",offer:"si",quantity:0},
+{id:103,img:"https://http2.mlstatic.com/D_775875-MLA27581491251_062018-Y.jpg", title:"Schablon",description:"Es un marco de buena madera", marca:"Pintesint",category:"schablones",offer:"si",quantity:0},
+{id:104,img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKUqtcnTRbv1Ul9IW3Dr3HpUkvGTynL84PzSxHVY8gh9XcIJcui_S1dDkT7Ffe1aSv27A&usqp=CAU", title:"Estopa",description:"1La estopa es un material que se compone de fibras de lino. Su uso es básico y general. Es ideal para limpieza, todo tipo de superficies, mantenimiento de maquinaria y aplicación de acabados sobre madera", marca:"Pintesint",category:"limpiadores",offer:"no",quantity:0},
+{id:105,img:"https://d3ugyf2ht6aenh.cloudfront.net/stores/001/487/919/products/maniguetas1-f82d459cfa9057121c16108251730394-1024-1024.jpg", title:"Manigueta",description:"Se utiliza para estampar, es decir para que la tinta pase por el shablon. Es de aluminio y de goma. La goma tiene una parte en V (biselada) y otra cuadrada.", marca:"Pintesint",category:"otros",offer:"no",quantity:0},
+{id:106,img:"http://http2.mlstatic.com/D_992924-MLA47337158860_092021-O.jpg", title:"Vinilplus Brillante",description:"s una tinta de buena resisten cia a los alcoholes y al agua. Tiene óptima adherencia sobre materiales vinílicos. Posee alta elasticidad, tenacidad y secado rápido", marca:"Pintesint",category:"tintas",offer:"no",quantity:0},
+{id:107,img:"http://http2.mlstatic.com/D_992924-MLA47337158860_092021-O.jpg", title:"otros",description:"s una tinta de buena resisten cia a los alcoholes y al agua. Tiene óptima adherencia sobre materiales vinílicos. Posee alta elasticidad, tenacidad y secado rápido", marca:"Pintesint",category:"otros",offer:"no",quantity:0},
+{id:108,img:"http://http2.mlstatic.com/D_992924-MLA47337158860_092021-O.jpg", title:"schablones",description:"buen schablon", marca:"Pintesint",category:"schablones",offer:"no",quantity:0},
+{id:109,img:"http://http2.mlstatic.com/D_992924-MLA47337158860_092021-O.jpg", title:"Limpiador",description:"limpador ok", marca:"Pintesint",category:"limpiadores",offer:"no",quantity:0},
+{id:110,img:"http://http2.mlstatic.com/D_992924-MLA47337158860_092021-O.jpg", title:"Vinilplus Brillante",description:"titna vinilplus brillante", marca:"Pintesint",category:"tintas",offer:"no",quantity:0},
+{id:111,img:"https://macondolaboresyoficios.com.ar/wp-content/uploads/2019/10/Elementos-serigraf%C3%ADa-Blog-22.jpg", title:"Armado de schablones 1",description:"armado schablones 1", marca:"Propio",category:"servicios",offer:"no",quantity:0},
+{id:112,img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5pUVWGWcaj6ZANRr6JHsGAkZOBcOScdhUu86qo1ABisGDlo_qgKSHrtNPCOiI8xddaM4&usqp=CAU", title:"Armado de schablones 2",description:"armado schablones 2", marca:"Propio",category:"servicios",offer:"no",quantity:0}]
+
+export default ProductsMock

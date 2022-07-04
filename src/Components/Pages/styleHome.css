@@ -1,0 +1,286 @@
+.home-container{
+    text-align: center;
+}
+
+.carrousel{
+    height: fit-content;
+    background-color: grey;
+}
+
+.offer-container{
+      
+    text-align: center;
+    margin-top: 50px;
+}
+
+.offer-container-title{
+    margin-top: 50px;
+}
+
+.offer-container h4{
+    padding: 20px;
+    margin-right: 0;
+}
+
+.item img{
+    transition: transform .2s;
+}
+
+.item img:hover{
+    transform: scale(1.05);
+}
+
+
+.item{
+    text-align: center;
+   /* margin: 0 auto;*/
+   margin-right: 40px;
+}
+
+.carousel-p{
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#banner-shop{
+    width: 400px;
+}
+.item-text{
+    margin-left: 0px;
+}
+
+
+/*---nuevo----*/
+
+.icon{
+    color: rgb(120, 120, 238);
+}
+
+ .texto-izq{
+  
+    margin-top: 100px;
+    margin-left:40px ;
+   /* width: 800px;*/
+    /*celu*/
+    display: flex;
+    width: 300px;
+    text-align: center;
+    
+}
+
+
+
+.texto-izq h3, .texto-der h3{
+    color: white;
+    display: none;
+}
+
+.texto-izq p, .texto-der p{
+    padding: 5px;
+}
+
+.texto-der{
+    /*celu*/
+    display: flex;
+    text-align: center;
+
+    width: 300px;
+   
+    padding: 0px;
+  
+    margin-left: 60px;
+    }
+
+
+
+#img-home{
+    width: 400px;
+    opacity: 0.9;
+}
+
+#img-home:hover{
+    width: 400px;
+    opacity: 1;
+}
+
+#banner-shop-animation{
+    text-align: center;
+    margin: 0 auto;
+    width: 500px;
+ 
+}
+
+#banner-shop{
+    text-align: center;
+    margin: 0 auto;
+    width: 500px;
+}
+
+/*home productos*/
+
+.home-productos{
+    background-color: rgb(206, 194, 194);
+}
+/*-----animacion-----------*/
+#img-home,.texto-der, .texto-izq{
+    position: relative;
+    animation-name:desplazar;
+    animation-duration:4s;
+}
+
+
+
+
+
+@keyframes desplazar{
+    from{
+        position:relative;
+        left: 80%;
+    }
+
+    to{
+        left: 0%;
+    }
+ }   
+
+ .home-productos p{
+    font-weight: 600;
+    color: black;
+    font-size: 20px;
+ }
+ 
+ .home-productos{
+    border: 1px solid black;
+    height: 35px;
+ }
+
+ 
+@media screen and (min-width: 1000px) {
+    .home-container{
+        text-align: center;
+        margin-bottom: 0;
+    }
+    
+    .carrousel{
+        height: fit-content;
+        background-color: grey;
+    }
+    
+    .offer-container{
+        /*margin: 0px auto;*/
+       
+        text-align: center;
+        width: 1400px;
+        margin: 0 auto;
+       /* margin-top: 30px;*/
+    
+    }
+
+    .home-productos{
+        margin-top: 40px;
+    }
+    
+    .offer-container h4{
+        padding: 20px;
+        margin-right: 0;
+    }
+    
+    .item img{
+      /*  border: 1px solid black;*/
+        width: 350px;
+        object-fit: cover;
+        
+    }
+    
+    .carousel-p{
+        color: white;
+        font-size: 48px;
+        font-weight: 600;
+    }
+    
+
+    .presentacion{
+        background-color:rgb(59, 59, 63);
+        display: flex;
+    }
+
+    .presentacion img{
+        width: 400px;
+        
+    }
+    
+    .texto-izq{
+        width: 38%;
+        text-align: right;
+        padding: 40px;
+    
+        display: grid;
+        margin-top: 0;
+        margin-left:0 ;
+       
+       
+
+    }
+
+    .texto-izq h3{
+        display: grid;
+    }
+
+    .texto-izq p{
+        color: white;
+        font-weight: 600;
+    }
+
+    /*-----texto der presentacion---*/
+    .texto-der{
+        text-align: left;
+        padding: 40px;
+        width: 630px;
+      
+        display: grid;
+        margin-left: 0px;
+    }
+
+    .texto-der h3{
+        display: grid;
+    }
+    
+    .texto-der p{
+        color: white;
+        font-weight: 600;
+       
+    }
+
+.offer-container-title{
+    margin-top: 0;
+}
+
+#banner-shop{
+    width: 700px;
+    margin-top: 20px;
+}
+/*----animacion banner abajo-----*/
+#banner-shop-animation{
+    width: 700px;
+    animation-name:fadein;
+    animation-duration:4s;
+}
+
+@keyframes fadein{
+    0% {opacity: 0;}
+  100% {opacity: 1;}
+ }   
+
+ .banner2 img{
+   margin-left: 50px;
+   animation-name: desplazar2;
+   animation-duration:4s;
+ }
+
+ @keyframes desplazar2{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }  
+ 
+}

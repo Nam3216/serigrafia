@@ -1,0 +1,58 @@
+.section-title{
+    background-image: url("./bannertitulo.gif");
+    width: 400px;
+    height: 60px;
+    margin: 0px auto;
+  border-radius: 30px;
+  animation-name: desplazarSection;
+  animation-duration: 3s;
+  position:relative;
+ 
+}
+
+@keyframes desplazarSection{
+    from{
+        position:relative;
+        left: 80%;
+    }
+
+    to{
+        left: 0%;
+    }
+ } 
+
+
+.section-title-container{
+    text-align: center;
+}
+
+.section-title h3{
+    font-size: 42px;
+    color: white;
+    
+}
+
+@media screen and (min-width: 1000px) {
+
+    .section-title{
+        background-image: url("./bannertitulo.gif");
+        width: 700px;
+        height: 60px;
+        margin: 0px auto;
+      border-radius: 30px;
+     
+    }
+    
+    
+    .section-title-container{
+        text-align: center;
+    }
+    
+    .section-title h3{
+        font-size: 42px;
+        color: white;
+        
+    }
+
+
+}

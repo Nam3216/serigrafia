@@ -1,0 +1,21 @@
+.us-container{
+    width: 60%;
+    margin: 0px auto;
+    margin-top: 80px;
+}
+
+.us-container-title{
+    margin-top: 100px;
+}
+
+@media screen and (min-width: 1000px) {
+    .us-container{
+        width: 60%;
+        margin: 0px auto;
+        margin-top: 50px;
+    }
+
+    .us-container-title{
+        margin-top: 0;
+    }
+}
