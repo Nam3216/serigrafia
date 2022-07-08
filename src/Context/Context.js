@@ -11,6 +11,8 @@ const ContextContainer=({children})=>{
     const[checkColor,setCheckColor]=useState("inicial")
     const[list,setList]=useState([])
     const[totalPrice,setTotalPrice]=useState(0)
+    const[qCartWidget,setQCartWidget]=useState(0)
+    const[checkQ,setCheckQ]=useState(0)//para q ande cartwidget
 //states que se usan para el use effect que agrega un objeto tinta a la lista
     const[prodTintas,setProdTintas]=useState({})
     const [colorProdTinta,setColorProdTintas]=useState("")
@@ -18,8 +20,8 @@ const ContextContainer=({children})=>{
 
 
     const AddProduct=(product,count,colorProduct)=>{ //esto es sin color
-      
         
+     
         let check=false
         
         if(product.category=="tintas"){//1esta parte es si son tintas, aca ve si ya esta ese color y actualiza cant
@@ -29,9 +31,12 @@ const ContextContainer=({children})=>{
                     if(item.color==colorProduct){//color se trae desde detail, segun el checkcolor de detail
                         item.quantity=count
                         check=true
+                        setCheckQ(checkQ+1)//para que corra updateWidget(), sino esta parte del addproduct no la corria
                     }
+                    
                 }
             })
+           
             if(check==false){//si no esta ese color, trae lista base de datos
               
                 GetListFirebase().then((list)=>{
@@ -52,16 +57,19 @@ const ContextContainer=({children})=>{
                 if(item.id==product.id){
                     item.quantity=count
                     check=true
+                    setCheckQ(checkQ+1)
                   
                 }
             })
-    
+            
             if(check==false){//si no esta agrega el producto que trajo funcion desde detail
                 product.quantity=count
                 setListCart([...listCart,product])//agrega si no esta ya en lista
+               // updateCartWidget()
             }
-          
+            
         }
+      
         
     }
 
@@ -72,20 +80,41 @@ const ContextContainer=({children})=>{
                 if(item.color==colorProdTinta){
                     item.quantity=countProdTinta
                     setListCart([...listCart,item])
+                   
                 }
             }
         })
+       
+        
     },[list])
 
 
    //cuando se agrega algun  prod nuevo, se ejecuta el total price
     useEffect(()=>{
         GetTotalPrice()
+       updateCartWidget()
     },[AddProduct])
+
+    //para que corra updateCarWidget en la primera parte del add product, sino no corria
+   useEffect(()=>{
+    updateCartWidget()
+   },[checkQ])
    
+
+    const updateCartWidget=()=>{
+        let q=0
+     
+        for(const item of listCart){
+            
+           q=q+item.quantity
+        }
+      
+        setQCartWidget(q)
+    }
    
 //funcion para actualizar cantidad cdo se agrega desde carrito
     const changeProductQuantity=(id,count)=>{
+      
   
      console.log(listCart,"listcart")
         listCart.map((product)=>{
@@ -99,8 +128,8 @@ const ContextContainer=({children})=>{
         setUpdateQuantity(count)//con el state se actualiza automaticamente en cart. fijarse si sigue requiriendose
         setCheckQuantity(true)//con esto le digo en cart si es true, q cant sea updateQuantity, si es false, q lo tome de listacart
         GetTotalPrice()//para que se actualice el precio total
-               
-        
+        updateCartWidget()//para que actualice cartwidget cant
+       //setCheckQuant(checkQuantity+1)
     }
 //funcion total price
     const GetTotalPrice=()=>{
@@ -121,20 +150,7 @@ const ContextContainer=({children})=>{
 
     //funcion para borrar un producto de la lista 
     const DeleteProduct=(product)=>{
-        //asi estaba ok pero no refrescaba en mismo momento, refrescaba despues
-      /*  let contador=-1
-        let posicion=0
-     listCart.map((item)=>{
-          contador++
-          console.log("contador",contador)
-          if(item.id==product.id){
-            posicion=contador
-          }
-      })
-      
-      listCart.splice(posicion,1)
-      console.log("posicion",listCart)*/
-      //setListCart(listCart)
+   
 
       //asi esta ok, refresca mismo momento, se borra de html de cart
      let renew=listCart.filter(item=>item.id!=product.id)
@@ -146,7 +162,7 @@ const ContextContainer=({children})=>{
         setListCart([])
     }
     
-    const dataContext={AddProduct,listCart,DeleteProduct,EmptyList,changeProductQuantity,updateQuantity,setUpdateQuantity,checkQuantity,setCheckQuantity,getColor,checkColor,setCheckColor,setTotalPrice,totalPrice,GetTotalPrice}
+    const dataContext={AddProduct,listCart,DeleteProduct,EmptyList,changeProductQuantity,updateQuantity,setUpdateQuantity,checkQuantity,setCheckQuantity,getColor,checkColor,setCheckColor,setTotalPrice,totalPrice,GetTotalPrice,qCartWidget}
 
 
 

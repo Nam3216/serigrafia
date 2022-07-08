@@ -7,6 +7,7 @@ import NavDropdown from'react-bootstrap/NavDropdown'
 import InstagramIcon from '@mui/icons-material/Instagram'; 
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import CartWidget from "./CartWidget"
 
 
 
@@ -70,14 +71,16 @@ const NavbarOk=()=>{
                   <Nav.Link  href="https://twitter.com/intent/tweet?text=Visita%20a%el%mejor%sitio%sobre%Serigrafia%20en%20Twitter&url=http%3A%2F%2Fparzibyte.me%2Fblog&via=parzibyte&hashtags=programación,html" target="_blank">
                     <TwitterIcon/>
                   </Nav.Link>
-                  <Nav.Link > Visitanos en: </Nav.Link>
+                  <Nav.Link > Visitanos: </Nav.Link>
                   <Nav.Link eventKey={2} href="www.instagram.com">
                   <InstagramIcon/>
+                  
                   </Nav.Link>
-                
+                  <CartWidget/>
                 </Nav>
               </Navbar.Collapse>
              </Container>
+           
         </Navbar>
         </div>
     )

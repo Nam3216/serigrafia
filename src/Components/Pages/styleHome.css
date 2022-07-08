@@ -119,9 +119,11 @@
 
 /*home productos*/
 
-.home-productos{
-    background-color: rgb(206, 194, 194);
+.home-productos img{
+    margin-bottom:50px ;
+    margin-top: 50px;
 }
+
 /*-----animacion-----------*/
 #img-home,.texto-der, .texto-izq{
     position: relative;
@@ -144,16 +146,7 @@
     }
  }   
 
- .home-productos p{
-    font-weight: 600;
-    color: black;
-    font-size: 20px;
- }
- 
- .home-productos{
-    border: 1px solid black;
-    height: 35px;
- }
+
 
  
 @media screen and (min-width: 1000px) {
@@ -258,13 +251,14 @@
 
 #banner-shop{
     width: 700px;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 /*----animacion banner abajo-----*/
 #banner-shop-animation{
     width: 700px;
     animation-name:fadein;
     animation-duration:4s;
+    margin-top: 50px;
 }
 
 @keyframes fadein{
@@ -276,6 +270,11 @@
    margin-left: 50px;
    animation-name: desplazar2;
    animation-duration:4s;
+  
+ }
+
+ .banner2{
+    margin-top: 80px;
  }
 
  @keyframes desplazar2{

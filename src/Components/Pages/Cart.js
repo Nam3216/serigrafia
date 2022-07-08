@@ -61,7 +61,7 @@ const Cart=()=>{
 
                 </div>
 
-            ): ( <div>
+            ): ( <div className="cart-not">
                     <h4>No ha elegido ningun producto</h4>
                     <Button variant="secondary" onClick={()=>Navigate("/productos")} id="button-empty">Elegi Productos</Button>
                 </div>)

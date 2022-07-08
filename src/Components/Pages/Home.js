@@ -41,9 +41,7 @@ const Home=()=>{
         }
         
     }
-/*<div className="carrousel">
-<CarouselOk/>      
-</div>*/
+
     return(
         <div className="home-container">
                
@@ -68,14 +66,14 @@ const Home=()=>{
                 </div>
             </div>
             <div className="offer-container">
-                <div className="home-productos"><p>Ofertas</p></div>
+                <div className="home-productos"><img src="ofertas.png" alt="cargando"  /></div>
                 {list.map((product)=>{
                     if(product.offer=="si"){
                         return <Items data={product} key={product.id}/>
                     }
                 })}
 
-                <div className="home-productos"><p>Mas Vendidos</p></div>
+                <div className="home-productos"><img src="sell.png" alt="cargando"  /></div>
                 {list.map((product)=>{
                     if(product.offer=="vendido"){
                         return <Items data={product} key={product.id}/>

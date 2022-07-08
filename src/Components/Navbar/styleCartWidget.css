@@ -1,0 +1,68 @@
+
+ #drppdown-menu{
+  /*  display: yes;*/
+    margin-right: 50px;
+
+}
+#dropdown-cart{
+    color: white;
+    margin-left: 10px;
+    margin-top: 8px;
+    height: 0px;
+    width: 0;
+    /*box-shadow: 10px 20px 20px rgb(65, 68, 71) inset;*/
+background-color: transparent;
+border: 0;
+margin-bottom: 20px;
+padding: 1px;
+
+}
+
+#dropdown-cart p{
+    color: white;
+    display: inline-block;
+    margin-left: 10px;
+
+}
+
+#dropdown-cart-container{
+    background-color: transparent;
+    text-align: center;
+    margin: 0 auto;
+    margin-right: 50px;
+
+    
+
+    
+}
+
+#dropdown-border{
+    border-bottom: 1px solid black;
+    
+}
+
+.dropdown-items{
+    font-size: small;
+
+}
+
+#p-cartwidget{
+    margin-right: 5px;
+}
+
+/*cuando es celular que no se vea desplegable*/
+
+@media screen and (max-width: 1000px) {
+    #drppdown-menu{
+        display: none;
+        text-align: center;
+    }
+    
+    #dropdown-cart{
+        margin-right: 30px;
+    }
+
+    #cart-big{
+        display: none;
+    }
+}
