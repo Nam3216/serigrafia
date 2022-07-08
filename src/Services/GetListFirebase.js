@@ -1,7 +1,7 @@
 import React from "react"
 import {collection,getDocs,etDocs} from "firebase/firestore"
 import db from "../Firebase"
-import GetList from "./GetList"
+//import GetList from "./GetList"
 
 const GetListFirebase= async ()=>{
     const itemCollection=collection(db,"ListPlanograf")

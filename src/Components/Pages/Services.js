@@ -4,7 +4,7 @@ import GetListFirebase from "../../Services/GetListFirebase"
 import Items from "../Items/Items"
 import "./styleServices.css"
 import SectionTitle from "../SectionTitle/SectionTitle"
-import ProductsMock from "../ProductsMock/ProductsMock"
+//import ProductsMock from "../ProductsMock/ProductsMock"
 
 const Services=()=>{
     const[list,setList]=useState([])

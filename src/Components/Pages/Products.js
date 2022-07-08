@@ -1,9 +1,9 @@
 import React,{useEffect,useState} from "react"
-import ProductsMock from "../ProductsMock/ProductsMock"
+//import ProductsMock from "../ProductsMock/ProductsMock"
 import ListProducts from "../ListProducts/ListProducts"
 import GetListFirebase from "../../Services/GetListFirebase"
 import SectionTitle from "../SectionTitle/SectionTitle"
-import GetList from "../../Services/GetList"
+//import GetList from "../../Services/GetList"
 import "./styleProducts.css"
 
 

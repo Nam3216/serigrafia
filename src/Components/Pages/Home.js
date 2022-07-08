@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from "react"
 import "./styleHome.css"
 import CarouselOk from "../Carousel/CarouselOk"
-import GetList from "../../Services/GetList"
+//import GetList from "../../Services/GetList"
 import Items from "../Items/Items"
 import GetListFirebase from "../../Services/GetListFirebase"
 import SectionTitle from "../SectionTitle/SectionTitle"

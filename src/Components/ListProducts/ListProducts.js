@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from "react"
-import GetList from "../../Services/GetList"
+//import GetList from "../../Services/GetList"
 //import "./styleListProducts - Copy.css"
 import "./styleListProducts.css"
 import {useNavigate} from "react-router-dom"
