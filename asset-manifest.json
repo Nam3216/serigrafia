@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/serigrafia/static/css/main.e2b48b98.css",
-    "main.js": "/serigrafia/static/js/main.644b127a.js",
+    "main.js": "/serigrafia/static/js/main.8a562f1e.js",
     "static/media/bannertitulo.gif": "/serigrafia/static/media/bannertitulo.5bc180a3d735bffb02ec.gif",
     "static/media/logo.svg": "/serigrafia/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/serigrafia/index.html",
     "main.e2b48b98.css.map": "/serigrafia/static/css/main.e2b48b98.css.map",
-    "main.644b127a.js.map": "/serigrafia/static/js/main.644b127a.js.map"
+    "main.8a562f1e.js.map": "/serigrafia/static/js/main.8a562f1e.js.map"
   },
   "entrypoints": [
     "static/css/main.e2b48b98.css",
-    "static/js/main.644b127a.js"
+    "static/js/main.8a562f1e.js"
   ]
 }
