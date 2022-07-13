@@ -13,9 +13,14 @@ import Footer from './Components/Pages/Footer';
 import Services from "./Components/Pages/Services"
 import Us from "./Components/Pages/Us"
 import Buy from "./Components/Pages/Buy"
+import { useEffect } from 'react';
 
 
 function App() {
+
+  useEffect(()=>{
+    document.title="Serigrafia"
+  },[])
   return (
     <div className="App">
        <ContextContainer>

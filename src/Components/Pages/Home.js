@@ -55,7 +55,7 @@ const Home=()=>{
                     <p>Asesoramiento  <SchoolIcon className="icon"/></p>
                     <p>Experiencia  <SevenKPlusIcon className="icon"/></p>
                 </div>
-                <img src="serigrafia2.gif" alt="cargando" id="img-home"/>
+                <img src="serigrafia/serigrafia2.gif" alt="cargando" id="img-home"/>
                 <div className="texto-der">
                     <h3>Todos los insumos </h3>
                     <p><StarIcon className="icon"/>  Tintas</p>
@@ -66,14 +66,14 @@ const Home=()=>{
                 </div>
             </div>
             <div className="offer-container">
-                <div className="home-productos"><img src="ofertas.png" alt="cargando"  /></div>
+                <div className="home-productos"><img src="serigrafia/ofertas.png" alt="cargando"  /></div>
                 {list.map((product)=>{
                     if(product.offer=="si"){
                         return <Items data={product} key={product.id}/>
                     }
                 })}
 
-                <div className="home-productos"><img src="sell.png" alt="cargando"  /></div>
+                <div className="home-productos"><img src="serigrafia/sell.png" alt="cargando"  /></div>
                 {list.map((product)=>{
                     if(product.offer=="vendido"){
                         return <Items data={product} key={product.id}/>
@@ -81,11 +81,11 @@ const Home=()=>{
                 })}
             </div>
         </div>
-        <img src="onlineshop.gif" alt="cargando" id={ idBanner ? "banner-shop":"banner-shop-animation"} />
+        <img src="serigrafia/onlineshop.gif" alt="cargando" id={ idBanner ? "banner-shop":"banner-shop-animation"} />
          <div className={idBanner ? "banner2Ok" :"banner2" }>
-            <img src="partners.png "alt="cargando"/>
-            <img src="mejor-asesoramiento.png "alt="cargando"/>
-            <img src="garantia.png "alt="cargando" id="banner-garantia"/>
+            <img src="serigrafia/partners.png "alt="cargando"/>
+            <img src="serigrafia/mejor-asesoramiento.png "alt="cargando"/>
+            <img src="serigrafia/garantia.png "alt="cargando" id="banner-garantia"/>
         </div>
         </div>
     )

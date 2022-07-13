@@ -138,13 +138,13 @@ const ListProducts=()=>{
                                 </div>
                               <Button variant="secondary" id="see-detail-button" onClick={()=>Navigate(`/productos/detalle/${descriptionId}`)} >Ver Detalle</Button>
                              </div>):(
-                                    <img src="fotolocal.jpg" alt="cargando"  id="foto-local"/>
+                                    <img src="serigrafia/fotolocal.jpg" alt="cargando"  id="foto-local"/>
                                 )} 
                                 
         </div> 
        
         </div>
-                                    <img src="banner_all_products.gif"  id="banner" />
+                                    <img src="serigrafia/banner_all_products.gif"  id="banner" />
         </div>
 
     )
