@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import {BrowserRouter,Routes,Route} from "react-router-dom"
+import {HashRouter,BrowserRouter,Routes,Route} from "react-router-dom"
 import NavbarOk from "./Components/Navbar/Navbar"
 import Home from "./Components/Pages/Home"
 import Products from "./Components/Pages/Products"
@@ -32,8 +32,8 @@ function App() {
      
       <main className="main">
      
-        <Routes>
-        
+        <Routes >
+          <Route path={"/serigrafia"} element={<Home/>}/>
           <Route path={"/"} element={<Home/>}/>
           <Route path={"/productos"} element={<Products/>}/>
           <Route path={"/productos/detalle/:id"} element={<Detail/>}/>
