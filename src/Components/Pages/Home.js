@@ -55,7 +55,8 @@ const Home=()=>{
                     <p>Asesoramiento  <SchoolIcon className="icon"/></p>
                     <p>Experiencia  <SevenKPlusIcon className="icon"/></p>
                 </div>
-                <img src="serigrafia/serigrafia2.gif" alt="cargando" id="img-home"/>
+                <div className="cont">
+                <img src="serigrafia/serigrafia2.gif" alt="cargando" id="img-home"/></div>
                 <div className="texto-der">
                     <h3>Todos los insumos </h3>
                     <p><StarIcon className="icon"/>  Tintas</p>

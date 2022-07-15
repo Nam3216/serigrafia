@@ -45,6 +45,7 @@
 
 #banner-shop{
     width: 400px;
+    
 }
 .item-text{
     margin-left: 0px;
@@ -60,12 +61,12 @@
  .texto-izq{
   
     margin-top: 100px;
-    margin-left:40px ;
-   /* width: 800px;*/
+
     /*celu*/
     display: flex;
     width: 300px;
     text-align: center;
+    margin-left: 20px;
     
 }
 
@@ -77,6 +78,7 @@
 }
 
 .texto-izq p, .texto-der p{
+    font-size: 12px;
     padding: 5px;
 }
 
@@ -89,32 +91,42 @@
    
     padding: 0px;
   
-    margin-left: 60px;
+    margin-left: 20px;
+    
     }
 
 
+.offer-container-title{
+    text-align: center;
+}
 
+.cont{
+    text-align: center;
+}
 #img-home{
-    width: 400px;
+    width: 350px;
     opacity: 0.9;
+    margin: 0px auto;
+    text-align: center;
+    margin-right: 30px;
 }
 
 #img-home:hover{
-    width: 400px;
+ 
     opacity: 1;
 }
 
 #banner-shop-animation{
     text-align: center;
     margin: 0 auto;
-    width: 500px;
+    width: 400px;
  
 }
 
 #banner-shop{
     text-align: center;
     margin: 0 auto;
-    width: 500px;
+    width: 400px;
 }
 
 /*home productos*/
@@ -203,6 +215,10 @@
         
     }
     
+    #img-home{
+        margin-right: 0;
+        margin: 30px auto;
+    }
     .texto-izq{
         width: 38%;
         text-align: right;
@@ -223,6 +239,7 @@
     .texto-izq p{
         color: white;
         font-weight: 600;
+        font-size: 16px;
     }
 
     /*-----texto der presentacion---*/
@@ -242,6 +259,7 @@
     .texto-der p{
         color: white;
         font-weight: 600;
+        font-size: 16px;
        
     }
 

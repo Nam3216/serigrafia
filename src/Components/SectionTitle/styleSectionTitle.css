@@ -1,12 +1,14 @@
 .section-title{
     background-image: url("./bannertitulo.gif");
-    width: 400px;
+    width: 80%;
     height: 60px;
     margin: 0px auto;
   border-radius: 30px;
   animation-name: desplazarSection;
   animation-duration: 3s;
   position:relative;
+  margin: 30px;
+  
  
 }
 
@@ -27,7 +29,7 @@
 }
 
 .section-title h3{
-    font-size: 42px;
+    font-size: 35px;
     color: white;
     
 }

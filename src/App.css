@@ -67,13 +67,14 @@ p{
 footer{
   background-color: rgb(189, 183, 183);
   margin-top: 50px;
-  height: 180px;
+  height: fit-content;
 
 }
 
 footer p{
   font-size: 14px;
   font-weight: 600px;
+ 
   
 }
 
