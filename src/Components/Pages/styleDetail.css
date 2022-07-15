@@ -37,6 +37,16 @@
     
  }
 
+ .operation-detail{
+    display: flex;
+    margin-left: 35%;
+    
+ }
+
+ .operation-detail h5{
+    margin-right: 10px;
+ }
+
  .button-operation{
     width: 40px;
     margin-right: 35px;
@@ -114,6 +124,7 @@
    
 }
 
+
 @media screen and (min-width: 1000px) {
 
 
@@ -142,12 +153,12 @@
     }
     
     
-     .operation{
+     .operation-detail{
       
        text-align:left;
     
         width: 200px;
-        margin-left: 0;
+        margin-left: 15px;
         
         
         
@@ -227,5 +238,8 @@
        
     }
 
+    #h5-detail{
+        margin-left: 70px;
+    }
 
 }

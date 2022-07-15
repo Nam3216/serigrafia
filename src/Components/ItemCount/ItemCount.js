@@ -25,9 +25,10 @@ const ItemCount=({msg,addHandleOk,initial})=>{
     return (
         <div className="item-count">
           {msg!="detail" &&  <p id="p-count">{count} </p>}  
-          <div className="operation">
+          {msg=="detail" &&<h5 id="h5-detail">{count}</h5>}
+          <div className={msg=="detail" ? "operation-detail":"operation"} >
                 <button variant="secondary"  onClick={SubtractCount} className={msg=="detail" ? "button-operation" : "button-operation-q"} >-</button>
-                {msg=="detail" &&<h5 >{count}</h5>}
+               
                
                 <button variant="secondary"  onClick={AddCount} className={msg=="detail" ? "button-operation" : "button-operation-q"}>+</button>
            
