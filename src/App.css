@@ -36,6 +36,7 @@ li {
 .navbar{/*este es la clase del navbar de bootstrap*/
   box-shadow: 10px 20px 20px rgb(65, 68, 71) inset;
   background-color: rgb(101, 77, 238);
+  width: 100%;
 }
 
 #nav a{
@@ -51,12 +52,15 @@ li {
 }
 
 /*------------celular------------------*/
-
+.content{
+  text-align: center;
+}
 .main {
   display: flex;
   flex-direction: column;
   text-align: center;
-  min-height: 700px;
+ 
+  margin: 0 auto;
 }
 
 
@@ -84,7 +88,7 @@ footer p{
   display: grid;
   grid-template-rows: 100px 1fr 1fr 100px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  
+  text-align: center;
 
   }
 
@@ -97,26 +101,27 @@ header{
 main{
     grid-row: 2/4;
     grid-column: 1/5;
+    margin: 0 auto;
+    ;
     
   }
 
 footer{
     grid-row: 4/5;
     grid-column: 1/5;
-    height: 130px;
+    height: fit-content;
+    margin: 0 auto;
+   
   }
 
-.main{
-  text-align: center;
-}
 
 /*-----------------------navbar sticky se ve sticky en web, no celular, en cel queda mal---------*/
 #navbar-sticky{
 
-  /* position: sticky;*/
+
    top: 0%;
    height: 40px;
-  /*background-color: black;*/
+ 
   background-color: rgb(101, 77, 238);
    
   }

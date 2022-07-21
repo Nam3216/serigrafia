@@ -1,3 +1,8 @@
+
+.section-title-container{
+    text-align: center;
+}
+
 .section-title{
     background-image: url("./bannertitulo.gif");
     width: 80%;
@@ -7,7 +12,7 @@
   animation-name: desplazarSection;
   animation-duration: 3s;
   position:relative;
-  margin: 30px;
+  
   
  
 }
@@ -23,10 +28,6 @@
     }
  } 
 
-
-.section-title-container{
-    text-align: center;
-}
 
 .section-title h3{
     font-size: 35px;

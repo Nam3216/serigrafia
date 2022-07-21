@@ -70,64 +70,64 @@ const ListProducts=()=>{
     }
     return(
         <div className="products-container-container">
-        <div className="products-container">
-            <div className="tipos" >
-                <h4 onClick={()=>handleTitle("tintas")} >Tintas <KeyboardArrowDownIcon/></h4>
-               { checkTitle=="tintas" && list.map((product)=>{
+            <div className="products-container">
+                <div className="tipos" >
+                    <h4 onClick={()=>handleTitle("tintas")} >Tintas <KeyboardArrowDownIcon/></h4>
+                { checkTitle=="tintas" && list.map((product)=>{
 
-                  //aca itera, pone segun categoria. paso el id de cada prod particular como parametro a handleitem. si check es igual al product.id de ese producto particular, se va a mostrar descripcion de ese prod
-                   if(product.category=="tintas" && product.color=="Blanco"){
-                        return ( <div className="products">
-                        <p onClick={()=>handleDescription(product.description,product.id,product.img,product.title)} >{product.title}<ArrowForwardIosIcon fontSize="very small"/> </p>
-                          </div> )}
-                //tambien pone un boton, con link al detalle del producto
-               })}
-
-                <h4 onClick={()=>handleTitle("limpiadores")}>Limpiadores <KeyboardArrowDownIcon/></h4>
-               { checkTitle=="limpiadores" && list.map((product)=>{
-
-                  
-                   if(product.category=="limpiadores"){
-                        return (<div className="products">
+                    //aca itera, pone segun categoria. paso el id de cada prod particular como parametro a handleitem. si check es igual al product.id de ese producto particular, se va a mostrar descripcion de ese prod
+                    if(product.category=="tintas" && product.color=="Blanco"){
+                            return ( <div className="products">
                             <p onClick={()=>handleDescription(product.description,product.id,product.img,product.title)} >{product.title}<ArrowForwardIosIcon fontSize="very small"/> </p>
-                              </div> )}
-               })}
+                            </div> )}
+                    //tambien pone un boton, con link al detalle del producto
+                })}
 
-                <h4 onClick={()=>handleTitle("schablones")}>Schablones <KeyboardArrowDownIcon/></h4>
-               { checkTitle=="schablones" && list.map((product)=>{
+                    <h4 onClick={()=>handleTitle("limpiadores")}>Limpiadores <KeyboardArrowDownIcon/></h4>
+                { checkTitle=="limpiadores" && list.map((product)=>{
 
-                  
-                   if(product.category=="schablones"){
-                        return (<div className="products">
-                            <p onClick={()=>handleDescription(product.description,product.id,product.img,product.title)} >{product.title}<ArrowForwardIosIcon fontSize="very small"/> </p>
-                              </div> )}
-               })}
+                    
+                    if(product.category=="limpiadores"){
+                            return (<div className="products">
+                                <p onClick={()=>handleDescription(product.description,product.id,product.img,product.title)} >{product.title}<ArrowForwardIosIcon fontSize="very small"/> </p>
+                                </div> )}
+                })}
 
-                <h4 onClick={()=>handleTitle("otros")}>Otros <KeyboardArrowDownIcon/></h4>
-               { checkTitle=="otros" && list.map((product)=>{
+                    <h4 onClick={()=>handleTitle("schablones")}>Schablones <KeyboardArrowDownIcon/></h4>
+                { checkTitle=="schablones" && list.map((product)=>{
 
-                  
-                   if(product.category=="otros"){
-                        return (<div className="products">
-                            <p onClick={()=>handleDescription(product.description,product.id,product.img,product.title)} >{product.title}<ArrowForwardIosIcon fontSize="very small"/> </p>
-                               </div> )}
-               })}
-                 <h4 onClick={()=>handleTitle("servicios")}>Servicios <KeyboardArrowDownIcon/></h4>
-               { checkTitle=="servicios" && list.map((product)=>{
+                    
+                    if(product.category=="schablones"){
+                            return (<div className="products">
+                                <p onClick={()=>handleDescription(product.description,product.id,product.img,product.title)} >{product.title}<ArrowForwardIosIcon fontSize="very small"/> </p>
+                                </div> )}
+                })}
 
-                  
-                   if(product.category=="servicios"){
-                        return (<div className="products">
-                            <p onClick={()=>handleDescription(product.description,product.id,product.img,product.title)} >{product.title}<ArrowForwardIosIcon fontSize="very small"/> </p>
-                              </div> )}
-               })}
+                    <h4 onClick={()=>handleTitle("otros")}>Otros <KeyboardArrowDownIcon/></h4>
+                { checkTitle=="otros" && list.map((product)=>{
+
+                    
+                    if(product.category=="otros"){
+                            return (<div className="products">
+                                <p onClick={()=>handleDescription(product.description,product.id,product.img,product.title)} >{product.title}<ArrowForwardIosIcon fontSize="very small"/> </p>
+                                </div> )}
+                })}
+                    <h4 onClick={()=>handleTitle("servicios")}>Servicios <KeyboardArrowDownIcon/></h4>
+                { checkTitle=="servicios" && list.map((product)=>{
+
+                    
+                    if(product.category=="servicios"){
+                            return (<div className="products">
+                                <p onClick={()=>handleDescription(product.description,product.id,product.img,product.title)} >{product.title}<ArrowForwardIosIcon fontSize="very small"/> </p>
+                                </div> )}
+                })}
 
 
 
 
 
 
-        </div>
+            </div>
         <div className="type-detail">
             {checkDescription==true ? (
                             <div className="product-item-container">

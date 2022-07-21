@@ -1,6 +1,10 @@
 .footer-content{
     width: 90%;
     margin-left: 5%;
+    text-align: center;
+
+
+    
    
 }
 
@@ -9,5 +13,11 @@
 }
 
 footer{
-    border: 2px solid black;
+    border: 2px solid rgb(165, 91, 91);
+   /* width: 100vw;*/
+   text-align: center;
+   margin: 0 auto;
+   min-width: 280px;
+   margin-top: 10px;
+   
 }

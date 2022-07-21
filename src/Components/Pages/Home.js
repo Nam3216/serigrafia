@@ -56,7 +56,8 @@ const Home=()=>{
                     <p>Experiencia  <SevenKPlusIcon className="icon"/></p>
                 </div>
                 <div className="cont">
-                <img src="serigrafia/serigrafia2.gif" alt="cargando" id="img-home"/></div>
+                    <img src="serigrafia/serigrafia2.gif" alt="cargando" id="img-home"/>
+                </div>
                 <div className="texto-der">
                     <h3>Todos los insumos </h3>
                     <p><StarIcon className="icon"/>  Tintas</p>
@@ -67,14 +68,18 @@ const Home=()=>{
                 </div>
             </div>
             <div className="offer-container">
-                <div className="home-productos"><img src="serigrafia/ofertas.png" alt="cargando"  /></div>
+                <div className="home-productos">
+                    <img src="serigrafia/ofertas.png" alt="cargando"  />
+                </div>
                 {list.map((product)=>{
                     if(product.offer=="si"){
                         return <Items data={product} key={product.id}/>
                     }
                 })}
 
-                <div className="home-productos"><img src="serigrafia/sell.png" alt="cargando"  /></div>
+                <div className="home-productos">
+                    <img src="serigrafia/sell.png" alt="cargando"  />
+                </div>
                 {list.map((product)=>{
                     if(product.offer=="vendido"){
                         return <Items data={product} key={product.id}/>

@@ -33,7 +33,7 @@ function App() {
       <main className="main">
      
         <Routes >
-          
+        <Route path={"/serigrafia"} element={<Home/>}/>
           <Route path={"/"} element={<Home/>}/>
           <Route path={"/serigrafia"} element={<Home/>}/>
           <Route path={"/productos"} element={<Products/>}/>

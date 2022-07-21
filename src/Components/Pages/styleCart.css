@@ -16,6 +16,7 @@
 .cart-not{
     text-align: center;
     margin: 0 auto;
+    min-height: 700px;
 }
 
 .cart-not h4{

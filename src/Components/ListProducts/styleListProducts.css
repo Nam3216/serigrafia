@@ -7,6 +7,7 @@
     text-align: center;
     
     margin-top: 0;
+   
     
 }
 #banner{
@@ -17,26 +18,28 @@
 
 .products-container{
     text-align: center;
+    
    
 }
 .tipos{
-   margin-right: 180px;
-   width: 100%;
+  /* margin-right: 180px;*/
+  /* width: 100%;*/
    text-align: left;
    margin: 0px auto;
+   
    
    
 }
 
 .tipos h4{
-    width: inherit;
+    width: 100%;
  
    background-color: rgb(199, 185, 185);
    border-bottom: 2px solid black;
    opacity: 0.8;
-   /*margin-left:80px;*/
-  /* margin: 0 auto;*/
+   
    cursor: pointer;
+ 
    
 }
 
@@ -111,6 +114,22 @@
 #foto-local{
     width: 400px;
     margin-top: 50px;
+}
+@media screen and (max-width: 390) {
+    .tipos{
+        background-color: aqua;
+    }
+    .tipos h4{
+        /*width: 100%;*/
+     
+       background-color: rgb(156, 46, 46);
+       /*border-bottom: 2px solid black;*/
+       opacity: 0.8;
+       
+       cursor: pointer;
+     
+       
+    }
 }
 
 @media screen and (min-width: 1000px) {
