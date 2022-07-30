@@ -46,46 +46,46 @@ const Home=()=>{
         <div className="home-container">
                
         <div className="offer-container-title">
-            <div className="presentacion">
-                <div className="texto-izq">
-                    <h3>Seri-Grafia Online</h3>
-                    <p>Tarjetas  <CreditCardIcon className="icon"/></p>
-                    <p>Ofertas  <LocalOfferIcon className="icon"/></p>
-                    <p>Shopping  <ShoppingCartCheckoutIcon className="icon"/></p>
-                    <p>Asesoramiento  <SchoolIcon className="icon"/></p>
-                    <p>Experiencia  <SevenKPlusIcon className="icon"/></p>
+                <div className="presentacion">
+                    <div className="texto-izq">
+                        <h3>Seri-Grafia Online</h3>
+                        <p>Tarjetas  <CreditCardIcon className="icon"/></p>
+                        <p>Ofertas  <LocalOfferIcon className="icon"/></p>
+                        <p>Shopping  <ShoppingCartCheckoutIcon className="icon"/></p>
+                        <p>Asesoramiento  <SchoolIcon className="icon"/></p>
+                        <p>Experiencia  <SevenKPlusIcon className="icon"/></p>
+                    </div>
+                    <div className="cont">
+                        <img src="serigrafia/serigrafia2.gif" alt="cargando" id="img-home"/>
+                    </div>
+                    <div className="texto-der">
+                        <h3>Todos los insumos </h3>
+                        <p><StarIcon className="icon"/>  Tintas</p>
+                        <p><StarIcon className="icon"/>  Limpiadores</p>
+                        <p><StarIcon className="icon"/>  Schablones</p>
+                        <p><StarIcon className="icon"/>  Armados</p>
+                        <p><StarIcon className="icon"/>  Tejido</p>
+                    </div>
                 </div>
-                <div className="cont">
-                    <img src="serigrafia/serigrafia2.gif" alt="cargando" id="img-home"/>
-                </div>
-                <div className="texto-der">
-                    <h3>Todos los insumos </h3>
-                    <p><StarIcon className="icon"/>  Tintas</p>
-                    <p><StarIcon className="icon"/>  Limpiadores</p>
-                    <p><StarIcon className="icon"/>  Schablones</p>
-                    <p><StarIcon className="icon"/>  Armados</p>
-                    <p><StarIcon className="icon"/>  Tejido</p>
-                </div>
-            </div>
-            <div className="offer-container">
-                <div className="home-productos">
-                    <img src="serigrafia/ofertas.png" alt="cargando"  />
-                </div>
-                {list.map((product)=>{
-                    if(product.offer=="si"){
-                        return <Items data={product} key={product.id}/>
-                    }
-                })}
+                <div className="offer-container">
+                    <div className="home-productos">
+                        <img src="serigrafia/ofertas.png" alt="cargando"  />
+                    </div>
+                    {list.map((product)=>{
+                        if(product.offer=="si"){
+                            return <Items data={product} key={product.id}/>
+                        }
+                    })}
 
-                <div className="home-productos">
-                    <img src="serigrafia/sell.png" alt="cargando"  />
+                    <div className="home-productos">
+                        <img src="serigrafia/sell.png" alt="cargando"  />
+                    </div>
+                    {list.map((product)=>{
+                        if(product.offer=="vendido"){
+                            return <Items data={product} key={product.id}/>
+                        }
+                    })}
                 </div>
-                {list.map((product)=>{
-                    if(product.offer=="vendido"){
-                        return <Items data={product} key={product.id}/>
-                    }
-                })}
-            </div>
         </div>
         <img src="serigrafia/onlineshop.gif" alt="cargando" id={ idBanner ? "banner-shop":"banner-shop-animation"} />
          <div className={idBanner ? "banner2Ok" :"banner2" }>

@@ -19,7 +19,7 @@ import { useEffect } from 'react';
 function App() {
 
   useEffect(()=>{
-    document.title="Serigrafia"
+    document.title="Serigrafia!!"
   },[])
   return (
     <div className="App">

@@ -43,7 +43,7 @@ const NavbarOk=()=>{
         <div >
           <Navbar  id={checkSticky==true ?"navbar-sticky" : "nav"} expand="lg"  variant="dark" fixed="top" >
               <Container>
-              <Navbar.Brand href="#home">Seri-Grafia</Navbar.Brand>
+              <Navbar.Brand href="/">Seri-Grafia</Navbar.Brand>
               <Navbar.Toggle aria-controls="responsive-navbar-nav" />
               <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto" id= "nav" >
@@ -60,10 +60,11 @@ const NavbarOk=()=>{
                   
                   </NavDropdown>
 
-                  <Nav.Link href="#features"><Link to={"/cart"} className="link">Cart</Link> </Nav.Link>
+                  <Nav.Link ><Link to={"/cart"} className="link">Cart</Link> </Nav.Link>
                   
-                  <Nav.Link href="#features"><Link to={"/nosotros"} className="link"> Nosotros</Link></Nav.Link>
-                  <Nav.Link href="#features"><Link to={"/contacto"} className="link"> Contacto</Link></Nav.Link>
+                  <Nav.Link ><Link to={"/nosotros"} className="link"> Nosotros</Link></Nav.Link>
+                  <Nav.Link ><Link to={"/contacto"} className="link"> Contacto</Link></Nav.Link>
+                  <CartWidget/>
                 </Nav>
                 <Nav id="nav-b">
                 <Nav.Link > Compartir en: </Nav.Link>
@@ -76,7 +77,7 @@ const NavbarOk=()=>{
                   <InstagramIcon/>
                   
                   </Nav.Link>
-                  <CartWidget/>
+                  
                 </Nav>
               </Navbar.Collapse>
              </Container>

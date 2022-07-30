@@ -1,5 +1,6 @@
 .home-container{
     text-align: center;
+    margin: 0 auto;
 }
 
 .carrousel{
@@ -11,10 +12,16 @@
       
     text-align: center;
     margin-top: 50px;
+  
+    margin: auto;
+   
+    width: 250px;/*no estaba*/
+
 }
 
 .offer-container-title{
     margin-top: 50px;
+   
 
 }
 
@@ -45,7 +52,7 @@
 }
 
 #banner-shop{
-    width: 400px;
+    width: 200px;
     
 }
 .item-text{
@@ -61,15 +68,18 @@
 
 .presentacion{
     text-align: center;
+    margin: auto;
 }
  .texto-izq{
+    display: none;
   margin: 0 auto;
     margin-top: 100px;
 
     /*celu*/
-    display: flex;
-    width: 300px;
+   /* display: flex;*/
+    width: 200px;
     text-align: center;
+    
 
    
 
@@ -91,10 +101,12 @@
 
 .texto-der{
     /*celu*/
-    display: flex;
+
+    display: none;
+     /* display: flex;*/
     text-align: center;
 
-    width: 300px;
+    width: 250px;
    
     padding: 0px;
   
@@ -105,13 +117,17 @@
 
 .offer-container-title{
     text-align: center;
+    margin: auto;
+    margin-top: 100px;
+    /* width: 200px;*/
+    
 }
 
 .cont{
     text-align: center;
 }
 #img-home{
-    width: 350px;
+    width: 250px;
     opacity: 0.9;
     margin: 0px auto;
     text-align: center;
@@ -126,26 +142,34 @@
 #banner-shop-animation{
     text-align: center;
     margin: 0 auto;
-    width: 400px;
+    width: 200px;
  
 }
 
 #banner-shop{
     text-align: center;
     margin: 0 auto;
-    width: 400px;
+    width: 200px;
 }
 
 /*home productos*/
-
+.home-productos{
+    text-align: center;
+}
 .home-productos img{
     margin-bottom:50px ;
     margin-top: 50px;
     width: 250px;
     height: 10px;
+    margin: 0 auto;
+  
     
 }
 
+.item img{
+    margin: 0 auto;
+   
+}
 /*-----animacion-----------*/
 #img-home,.texto-der, .texto-izq{
     position: relative;
@@ -183,8 +207,8 @@
     }
     
     .offer-container{
-        /*margin: 0px auto;*/
-       
+   
+       width:1000px;
         text-align: center;
        /*min-width: 1076px;*/
         margin: 0 auto;
@@ -217,14 +241,16 @@
     .offer-container-title{
         text-align: center;
         margin-top: 0;
+        width: 1000px;
     }
 
     .presentacion{
         background-color:rgb(59, 59, 63);
         display: flex;
         width: 100%;
-        margin: 0 auto;
+        margin:  auto;
         border: 5px solid blue;
+        
     }
 
    
@@ -233,17 +259,19 @@
         width: 400px;
         margin-right: 0;
         margin: 30px auto;
+        margin-left:20px ;
         
     }
     .texto-izq{
-        width: 38%;
+        
+        width: 50%;
         text-align: right;
         padding: 40px;
     
         display: grid;
         
         margin-top: 0;
-        margin-left:0 ;
+        margin-left:20px ;
        
        
 
@@ -259,6 +287,7 @@
         font-size: 16px;
     }
 
+   
     /*-----texto der presentacion---*/
     .texto-der{
         text-align: left;
@@ -267,6 +296,7 @@
       
         display: grid;
         margin-left: 0px;
+        margin-left:20px ;
     }
 
     .texto-der h3{

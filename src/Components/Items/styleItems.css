@@ -1,20 +1,21 @@
 .item{
     display: inline-block;
     /*height: 500px;*/
-    width: 302px;
+    width: 250px;
     height: fit-content;
     margin: 0px auto;
    /* margin-right: 50px;*/
     text-align: center;
    margin-top: 30px;
    border: 1px solid white;
-    margin-right: 5px;
+    /*margin-right: 5px;*/
 }
 /*img en otro lado*/
 .item img{
-    width: 200px;
+    width: 250px;
     height: 200px;
     object-fit: contain;
+
 }
 
 
